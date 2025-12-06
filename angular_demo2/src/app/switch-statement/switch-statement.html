@@ -1,0 +1,26 @@
+<p>switch-statement works!</p>
+
+<button (click)="handaleColor('red')">Red Color</button>
+<button (click)="handaleColor('blue')">Blue Color</button>
+<button (click)="handaleColor('green')">Green Color</button>
+<button (click)="handaleColor('yellow')">Yellow Color</button>
+
+<input type="text" (input)="handaleTextColor($event)" placeholder="color text" >
+
+@switch(color) {
+  @case ('red') {
+    <p style="background-color: red;">You have selected Red Color</p>
+  }
+
+  @case ('blue') {
+    <p style="background-color: blue;">You have selected Blue Color</p>
+  }
+
+  @case ('green') {
+    <p style="background-color: green;">You have selected Green Color</p>
+  }
+
+  @default {
+    <p style="background-color: yellow;">You have selected Yellow Color</p>
+  }
+}
