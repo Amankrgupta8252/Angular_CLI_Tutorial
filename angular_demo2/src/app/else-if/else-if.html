@@ -1,0 +1,27 @@
+<p>else-if works!</p>
+<h1>Else_ If</h1>
+
+<button (click)="handaleColor(1)"> Red</button>
+<button (click)="handaleColor(2)"> Green</button>
+<button (click)="handaleColor(3)"> Blue</button>
+<button (click)="handaleColor(4)"> Yellow</button>
+<button (click)="handaleColor(5)"> Other</button>
+
+<input type="text" (input)="handaleInput($event)" placeholder="Enter Color Number" #colorInput>
+<!-- ELSE IF Example -->
+
+@if (color === 1) {
+  <div style="background-color: red; width: 405px; height: 200px;"></div>
+}
+@else if (color === 2) {
+  <div style="background-color: green; width: 405px; height: 200px;"></div>
+}
+@else if (color === 3) {
+  <div style="background-color: blue; width: 405px; height: 200px;"></div>
+}
+@else if (color === 4) {
+  <div style="background-color: yellow; width: 405px; height: 200px;"></div>
+}
+@else {
+  <div style="background-color: black; width: 405px; height: 200px;"></div>
+}
