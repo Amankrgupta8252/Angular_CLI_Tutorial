@@ -1,0 +1,11 @@
+<p>for-loop works!</p>
+
+@for (user of users; track user) {
+  <p>{{user}}</p>
+}
+<hr>
+@for (student of students; track student.name) {
+  <p>{{student.name}}</p>
+  <button (click)="GetAge(student.age)">Get Age</button>
+  
+}
