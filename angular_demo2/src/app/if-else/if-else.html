@@ -1,0 +1,21 @@
+<p>if-else works!</p>
+
+<h1>if And If Else</h1>
+
+<button (click)="Show()"> Show</button>
+<button (click)="heid()"> Heid</button>
+<button (click)="toggal()">Toggal</button>
+
+<!-- Simple IF -->
+@if (display) {
+  <div style="background-color: aqua; width: 500px; height: 500px;"></div>
+}
+
+<button (click)="divshow()">Div Show</button>
+<!-- IF ELSE Example -->
+@if (divshow1) {
+  <div style="background-color: yellow; width: 200px; height: 200px;"></div>
+} 
+@else {
+  <div style="background-color: red; width: 200px; height: 200px;"></div>
+}

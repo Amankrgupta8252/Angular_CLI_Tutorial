@@ -1,0 +1,12 @@
+<p>get-set works!</p>
+
+<div>
+    <input type="text" value="{{name}}" (input)="onInput($event)" placeholder="Enter text here">
+    <br>
+    <br>
+    <button (click)="showname()">Get Value</button> 
+    <button (click)="setEvent()">Set Value</button>
+    <p>Input Value: {{ name }}</p>
+    <h1>Get Input value: {{displayname}}</h1>
+
+</div>
